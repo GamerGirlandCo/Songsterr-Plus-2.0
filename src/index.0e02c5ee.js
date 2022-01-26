@@ -31,7 +31,7 @@ var w = {
   footerWithAds: 'Btwsw Btw2dx',
   copyright: 'Btwrv',
   rightSidebar: 'Btw13h',
-  appFree: 'Btww9 Btwp4',
+  appFree: 'Btww9 Btw35a',
   appPlus: 'Btww9 Btw35a'
 }
 const S = !0,
