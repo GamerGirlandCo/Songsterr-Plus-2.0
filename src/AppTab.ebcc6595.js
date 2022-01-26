@@ -3942,7 +3942,7 @@ class Si extends Dt {
             ? 'Hdoi Hd2ur Hd1fb'
             : 'Hdoi Hd2n2',
           id: 'tablature',
-          'data-id': p ? ht : ut,
+          'data-id': "print--Plus",
           role: 'application',
           key: 'main',
           ref: this.refMain
