@@ -3898,7 +3898,7 @@ class Si extends Dt {
     }
   }
   render () {
-    const {
+    let {
         loopStartLayout: t,
         loopEndLayout: e,
         loopStartX: o,
@@ -3927,6 +3927,7 @@ class Si extends Dt {
       S = a[0].layout.layers.height,
       L = !p,
       _ = 'tab_editor' === x
+      p = true;
     return zt(
       Bt,
       null,
