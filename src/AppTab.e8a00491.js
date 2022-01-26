@@ -3915,11 +3915,11 @@ class Si extends Dt {
         {
           className: p
             ? h
-              ? "Hdoi Hd2ur"
+              ? "Hdoi"
               : "Hdoi"
             : h
-            ? "Hdoi Hd2ur"
-            : "Hdoi Hd2ur",
+            ? "Hdoi"/* "Hdoi Hd2ur Hd1fb" */
+            : "Hdoi",
           id: "tablature",
           "data-id": "Print--plus",
           role: "application",
