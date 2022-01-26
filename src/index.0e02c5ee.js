@@ -11852,7 +11852,7 @@ void 0 !== document.hidden
   : void 0 !== document.webkitHidden &&
     ((ud = 'webkitHidden'), (pd = 'webkitVisibilityState'))
 const gd = 'Print--plus',
-  fd = 'Print--free'
+  fd = 'Print--plus'
 function md (t) {
   const e = t.rules || t.cssRules
   for (const t of e)
