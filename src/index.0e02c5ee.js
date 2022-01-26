@@ -9886,7 +9886,7 @@ const dl = t => {
     })
 }
 function ul (t) {
-  const e = 'plus' === t.plan.toLowerCase() ? 'PLUS' : 'FREE',
+  const e = "PLUS",
     n = t.subscription || null,
     s = 'lifetime' === t.sra_license,
     o = !!n && n.isPayPal,
