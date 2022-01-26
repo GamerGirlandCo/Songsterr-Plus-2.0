@@ -3939,8 +3939,8 @@ class Si extends Dt {
               ? 'Hdoi Hd2ur'
               : 'Hdoi'
             : h
-            ? 'Hdoi Hd2ur Hd1fb'
-            : 'Hdoi Hd2n2',
+            ? "Hdoi Hd2ur"
+            : "Hdoi Hd2ur",
           id: 'tablature',
           'data-id': "print--Plus",
           role: 'application',
