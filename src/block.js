@@ -13,12 +13,12 @@ function cancel(requestDetails) {
 }
 browser.webRequest.onBeforeRequest.addListener(
 	cancel,
-	{urls:["https://www.songsterr.com/static/index.*.js"]},
+	{urls:["https://www.songsterr.com/static/*index.*.js"]},
 	["blocking"]
 );
 
 browser.webRequest.onBeforeRequest.addListener(
 	cancel,
-	{urls:["https://www.songsterr.com/static/preact.*.js"]},
+	{urls:["https://www.songsterr.com/static/*preact.*.js"]},
 	["blocking"]
 );

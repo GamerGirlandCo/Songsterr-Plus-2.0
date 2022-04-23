@@ -1,3 +1,4 @@
 web-ext-artifacts/
 *.zip
 .history/
+src/.history/
