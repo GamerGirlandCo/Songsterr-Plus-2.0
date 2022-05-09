@@ -52,7 +52,7 @@ const w = {
     copyright: "Cdywb",
     rightSidebar: "Cdy2g1",
     appFree: "Cdy1hg Cdy160",
-    appPlus: "Cdy1hg Cdy3h",
+    appPlus: "Cdy1hg Cdy160",
   },
   S = !0,
   E = 27;
@@ -1059,7 +1059,9 @@ function Nt(t) {
           src:
             "data:image/svg+xml;base64," +
             f(
-              `<svg xmlns='http://www.w3.org/2000/svg' width='${7 * t.length + 10}' height='22'><text x='50%' y='50%' font-family='"songsterr", -apple-system, system-ui, BlinkMacSystemFont, Arial, sans-serif' font-weight='400' font-size='14px' fill='#fff' dominant-baseline='central' text-anchor='middle'>${t}</text></svg>`
+              `<svg xmlns='http://www.w3.org/2000/svg' width='${
+                7 * t.length + 10
+              }' height='22'>\n            <text x='50%' y='50%' font-family='"songsterr", -apple-system, system-ui, BlinkMacSystemFont, Arial, sans-serif' font-weight='400' font-size='14px' fill='#fff' dominant-baseline='central' text-anchor='middle'>${t}</text>\n          </svg>`
             ),
         })
       )
@@ -1761,7 +1763,7 @@ const Je = e((t) => {
                   className: _.item,
                 },
                 s(Ve, { styles: _ }),
-                s("div", { className: _.text }, "Сообщество")
+                s("div", { className: _.text }, "╨í╨╛╨╛╨▒╤ë╨╡╤ü╤é╨▓╨╛")
               ),
             !b &&
               s(
@@ -2196,7 +2198,7 @@ const _s = {
         break;
       case "retune":
         o = {
-          title: "Don’t want to retune the guitar?",
+          title: "DonΓÇÖt want to retune the guitar?",
           cta: n.isPhone
             ? "Pitch shift the tab in our app!"
             : "Pitch shift the tab on Plus!",
@@ -2252,7 +2254,7 @@ const _s = {
                 onClick: () => t("promo/unsubscribe"),
                 className: ms.buttonPromoUnsubscribe,
               },
-              "Don’t show ads like that"
+              "DonΓÇÖt show ads like that"
             )
           )
         )
@@ -2467,7 +2469,7 @@ function Qs(t) {
 }
 const Zs = (t) => new Promise((e) => setTimeout(e, t));
 function tn(t) {
-  t.name = t.name.replace(/Дорожка/g, "Track");
+  t.name = t.name.replace(/╨ö╨╛╤Ç╨╛╨╢╨║╨░/g, "Track");
 }
 class en {
   constructor() {
@@ -2499,7 +2501,7 @@ function an(t) {
   ("untitled" === e || ("drumkit" === e && "drums" === s) || s.includes(e)) &&
     (n = ""),
     (t.title = t.instrument),
-    n.length && (t.title = n + " - " + t.title);
+    n.length && (t.title = n + "┬á-┬á" + t.title);
 }
 async function cn(t, e, s) {
   const n = `/api/meta/${t}${e ? `/${e}` : ""}`,
@@ -2758,7 +2760,7 @@ const pn = (t) => {
         (d = s(
           "span",
           null,
-          "　Version: ",
+          "πÇÇVersion: ",
           l
             ? s(
                 "a",
@@ -2791,12 +2793,12 @@ const pn = (t) => {
       y = s(
         u,
         null,
-        "　|　",
+        "πÇÇ|πÇÇ",
         s("a", { className: "Cpv2kr", onClick: (t) => f(t, "light") }, "Light"),
         " ",
         s("a", { className: "Cpv2kr", onClick: (t) => f(t, "dark") }, "Dark"),
         " ",
-        "　|　",
+        "πÇÇ|πÇÇ",
         s(
           "a",
           { className: "Cpv2kr Cpv1x", onClick: (t) => p(t, "audioV2") },
@@ -2855,7 +2857,7 @@ const pn = (t) => {
         s(
           "div",
           { className: "Cpv6d" },
-          "　|　",
+          "πÇÇ|πÇÇ",
           l &&
             s(
               "a",
@@ -3257,7 +3259,7 @@ const Kn =
       if (r + 3.6118 + t > s) break;
       (o += " " + i[a]), (r += 3.6118 + t);
     }
-    const c = n ? "…" : "",
+    const c = n ? "ΓÇª" : "",
       l = n ? 13 : 0;
     o += c;
     const d = c + i.slice(a).join(" ");
@@ -5810,7 +5812,7 @@ const zo = Bt(
       ? h("div", { children: h(Rt, { component: zo }, "wrap") })
       : null;
   },
-  Ho = (t) => true,
+  Ho = (t) => true || t.demo.enabled,
   Wo = (t, e) =>
     t.layer.layer === e
       ? t.dispatch("layer/hide")
@@ -6061,7 +6063,7 @@ var Qo = T(
         r = this.props.screen.fullscreen,
         a = !e.loading && !!e.current && t.isLoggedIn && !o && t.profile,
         c = !e.loading && !!e.current && t.isLoggedIn && !o,
-        l = !t.hasPlus;
+        l = !true;
       return s(
         "div",
         { className: i ? w.appPlus : w.appFree, id: "app" },
@@ -6652,7 +6654,7 @@ const Sr = (t) => {
         user: {
           profile: null,
           hasPlus: true,
-          hasSubscription: true,
+          hasSubscription: !1,
           isAdmin: !1,
           isModerator: !1,
           isLoggedIn: !1,
@@ -8765,7 +8767,7 @@ function sc(t) {
   );
 }
 const nc = (t) =>
-  !!hr("hasUnsubscribedFromPromo") || !!t.user.hasPlus || !!t.promo.active;
+  !!hr("hasUnsubscribedFromPromo") || !!true || !!t.promo.active;
 function ic(t) {
   const { position: e } = t.player,
     s = t.part.current,
