@@ -623,7 +623,7 @@ class vt extends c {
       const { status: t } = this.state;
       this.props.in
         ? "entering" !== t && "entered" !== t && (e = "entering")
-        : ("entering" !== t && "entered" !== t) || (e = "exiting");
+        : ("entering" !== t && "entered" !== t) || (e = "exiting")
     }
     this.updateStatus(!1, e);
   }
@@ -1072,7 +1072,7 @@ function Rt() {
     "Sentry" in window &&
       "function" == typeof window.Sentry.captureException &&
       window.Sentry.captureException(t),
-      console && console.error(t);
+      console && console.error(t, t.stack);
   });
   return t
     ? h(Nt, {
@@ -7702,7 +7702,7 @@ const Ea = (t) => {
     });
 };
 function Ia(t) {
-  const e = "plus" === t.plan.toLowerCase() ? "PLUS" : "FREE",
+  const e = true,
     s = t.subscription || null,
     n = "lifetime" === t.sra_license,
     i = !!s && s.isPayPal,

@@ -1,7 +1,2 @@
-<html>
-<head><title>301 Moved Permanently</title></head>
-<body>
-<center><h1>301 Moved Permanently</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
+import{H as t,I as e,L as s,_ as a,T as r}from"./index.3637aaf7.js";import{a as o,v as i}from"./preact.f8a34c73.js";import{n as c}from"./ActionButton.e7edc72b.js";import{x as n}from"./FormError.ba736668.js";import{w as l}from"./Panel.4e04b14d.js";import{o as u}from"./GenericPanel.module.38dde225.js";import{c as m,o as d}from"./ContinueLink.d187aeb8.js";import{w as p,s as f}from"./google.04041246.js";import"./user.804c31aa.js";var h=t(class extends o{constructor(t){super(t),e(this,"deactivate",(async t=>{t.preventDefault();try{this.setState({error:null,processing:!0}),await p(),this.props.dispatch("user/deactivate"),this.setState({processing:!1,error:null,next:!0})}catch(t){this.setState({processing:!1,error:f(t)})}})),this.state={error:null,processing:!1,next:!1}}render(){const t=i(m,{key:"deactivate",className:u.section,"data-section":"form"},i("h4",{className:u.title},"Are you sure you want to permanently deactivate you account? You will loose all your user data."),i("form",{noValidate:!0,onSubmit:this.deactivate},i(n,{error:this.state.error}),i("div",{className:u.actions},i(c,{title:"I'm sure, deactivate my account",processing:this.state.processing}),i(s,{to:"/a/wa/account",className:a.buttonLink},"Cancel")))),e=i(m,{key:"done",className:u.section,"data-section":"done"},i("h4",{className:u.title},"Your account was successfully deactivated."),i(d,null)),o=this.state.next?e:t;return i(l,{title:"Deactivate account",id:this.props.id},i(r,null,o))}},"user");export{h as default};
+//# sourceMappingURL=DeactivatePanel.d21fda42.js.map

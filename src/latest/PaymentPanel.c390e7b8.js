@@ -1,7 +1,2 @@
-<html>
-<head><title>301 Moved Permanently</title></head>
-<body>
-<center><h1>301 Moved Permanently</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
+import{H as t,I as e,bH as a,L as s,T as o}from"./index.3637aaf7.js";import{a as n,v as r}from"./preact.f8a34c73.js";import{A as i}from"./PaymentForm.eb1c38b5.js";import{w as c}from"./Panel.4e04b14d.js";import{c as m,o as l}from"./ContinueLink.d187aeb8.js";import"./ActionButton.e7edc72b.js";var d=t(class extends n{constructor(t){super(t),e(this,"componentDidMount",(()=>{this.props.dispatch("curiosity/conversion",{event:"Opened payment page"})})),e(this,"toggleNext",(()=>{this.setState({next:!0})})),this.state={next:!1}}render(){a();const t=r(m,{key:"payment",className:"Crt1da Crtf0","data-section":"form"},r("h4",{className:"Crtdo"},"Thanks for subscribing. Your hard earned money goes towards making Songsterr an even better product."),r(i,{mode:"subscribe",toggleNext:this.toggleNext,submitButton:{name:"Pay",id:"pay"},cancelLink:{link:"/a/wa/plus"}}),r("div",{className:"Crt2ph","data-section":"footer"},"Use the form above to sign up for a recurring monthly subscription. ","You will be immediately charged ",r("strong",null,"$9.90 USD")," for its first month. You can cancel any time with 1 click from your ",r(s,{to:"/a/wa/account"},"account page"),". After cancellation, you will stay on the paid plan until the end of your last paid month.")),e=r(m,{key:"paying-success",className:"Crt1da Crt1i9","data-section":"done"},r("h4",{className:"Crtdo"},"Thanks for subscribing!"),r(l,null)),n=this.state.next?e:t;return r(c,{title:"Paying",id:this.props.id},r(o,null,n))}});export{d as default};
+//# sourceMappingURL=PaymentPanel.c390e7b8.js.map

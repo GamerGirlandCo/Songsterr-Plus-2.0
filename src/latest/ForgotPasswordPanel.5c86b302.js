@@ -1,7 +1,2 @@
-<html>
-<head><title>301 Moved Permanently</title></head>
-<body>
-<center><h1>301 Moved Permanently</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
+import{H as e,I as t,_ as s,T as a}from"./index.3637aaf7.js";import{a as r,p as i,v as o}from"./preact.f8a34c73.js";import{n}from"./ActionButton.e7edc72b.js";import{v as l,l as m,x as c}from"./FormError.ba736668.js";import{d as u}from"./Input.4b13d914.js";import{h as d}from"./user.804c31aa.js";import{w as p}from"./Panel.4e04b14d.js";import{o as h,c as f}from"./ContinueLink.d187aeb8.js";import{o as b}from"./GenericPanel.module.38dde225.js";var g=e(class extends r{constructor(e){super(e),t(this,"email",i()),t(this,"handleSubmit",(async e=>{e.preventDefault();const t=this.email.current;try{l([{field:t,validator:m}]),this.setState({processing:!0,error:null}),await d(t.value),this.props.dispatch("user/forgotPassword"),this.setState({processing:!1,error:null,next:!0,email:t.value})}catch(e){this.setState({processing:!1,error:e})}})),this.state={error:null,email:"",processing:!1,next:!1}}render(){const e=o(f,{key:"form",className:b.section,"data-section":"form"},o("h4",{className:b.title},"Please enter the email address you use to sign in to your account."),o("form",{noValidate:!0,onSubmit:this.handleSubmit,action:""},o(c,{error:this.state.error}),o(u,{ref:this.email,type:"email",name:"email",label:"Email",autocomplete:"email",error:this.state.error}),o("div",{className:b.actions},o(n,{title:"Submit",processing:this.state.processing}),o(h,{href:"/a/wa/signin",className:s.buttonLinkFloat},"Cancel")))),t=o(f,{key:"done",className:b.section,"data-section":"done"},o("h4",{className:b.title},"We've sent instructions to ",this.state.email),o(h,{href:"/a/wa/signin"})),r=this.state.next?t:e;return o(p,{title:"Forgot your password?",id:this.props.id},o(a,null,r))}});export{g as default};
+//# sourceMappingURL=ForgotPasswordPanel.5c86b302.js.map

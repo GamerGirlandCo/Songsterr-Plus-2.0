@@ -1,7 +1,2 @@
-<html>
-<head><title>301 Moved Permanently</title></head>
-<body>
-<center><h1>301 Moved Permanently</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
+import{a as e,F as t,y as a,v as n}from"./preact.f8a34c73.js";import{w as o}from"./Panel.4e04b14d.js";import{u as s,W as r,bG as i,ba as l}from"./index.3637aaf7.js";const c={privacy:"Privacy Policy",terms:"Terms of Service",dnsmpd:"Do Not Sell My Personal Information"};class d extends e{render(){const{textpage:e}=s("textpage","experiments");{const n=t(r);a((()=>{i(n,this.props.route.page)}),[this.props.route.page]),a((()=>{let e;const t=document.getElementById("manage-consent");return t&&(e=e=>{n.dispatch("consent/view",{suite:"tcf",view:"details",options:null}),e.preventDefault()},t.addEventListener("click",e)),()=>t&&e&&t.removeEventListener("click",e)}),[e.content])}return n(o,{title:e.title||c[e.slug]||"Placeholder",id:e.slug},n("div",{className:"Cbj22m"},e.isLoading&&n(l,{level:"info",title:"Loading...",action:"",reason:"textpage_loading"}),e.isError&&n(l,{level:"info",title:"Something went wrong",action:"Please, try to reload page.",reason:"textpage_error"}),!e.isLoading&&!e.isError&&n("div",{className:"Cbj2o2",dangerouslySetInnerHTML:{__html:e.content}})))}}export{d as TextPanel,d as default};
+//# sourceMappingURL=TextPanel.7ca562ed.js.map
