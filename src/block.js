@@ -1,5 +1,6 @@
 browser.pageAction.onClicked.addListener(function(tab) {
 	console.log(tab)
+	window.location.reload
 	browser.tabs.executeScript({
 		file: "inject.js"
     });
