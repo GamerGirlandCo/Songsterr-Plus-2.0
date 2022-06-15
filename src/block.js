@@ -1,10 +1,16 @@
 browser.pageAction.onClicked.addListener(function(tab) {
 	console.log(tab)
-	window.location.reload()
-	browser.tabs.executeScript({
-		file: "inject.js"
-    });
+		browser.tabs.reload().then(() => {
+		console.log("refreshed")
+		browser.tabs.executeScript({
+			file: "inject.js"
+		});
+		console.log("injected")
+	})
 });
+async function asyncReload() {
+	window.location.reload(true)
+}
 function cancel(requestDetails) {
 	console.log("blocking!: " + requestDetails.url);
 	return {
