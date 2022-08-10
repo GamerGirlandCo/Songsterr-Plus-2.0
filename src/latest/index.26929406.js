@@ -1804,7 +1804,7 @@ function iS(t) {
 	}
 }
 function ix(t) {
-	return "prod" === t ? 2 : 3;
+	return true ? 2 : 3;
 }
 function iT(t) {
 	switch (t) {
