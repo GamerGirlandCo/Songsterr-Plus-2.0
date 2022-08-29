@@ -2,6 +2,14 @@
 firefox extension that unlocks songsterr plus/premium cuz FUCK them!!! :D
 
 ---
+## Instructions with sourcecode only:
+1) Click on code to get the latest sourcecode
+2) Unpack the contents to some directory of your choice
+2) press `Ctrl+Shift+A` to go to the `about:addons` page.
+3) click on the cog icon somewhere in the top right corner and click `Debug Add-ons` (shown below)
+![image](https://user-images.githubusercontent.com/37163052/125975319-f7e12c91-a928-4e87-afbd-b9267427f9d7.png)
+4) browse for the folder where you unpacked everything. Choose any file within the src folder
+5) Go to songsterr and enjoy the new user experience
 
 ## Instructions:
 
