@@ -205,33 +205,34 @@ function download() {
 }
 
 function tI(t) {
-    if (!document.getElementById("downloadTab")) {
-        window.downloadTab = download;
-
-        console.log("Better debug me insteadf");
-        var submitButton = document.getElementById("menu-submit");
-        var svg = submitButton.getElementsByClassName("x01qb")[0];
-
-        var downloadSvg = svg.cloneNode(true);
-        downloadSvg.setAttribute("transform", "rotate(180)");
-
-        var text = document.createElement("div");
-        text.setAttribute("class", "x02e0");
-        text.innerHTML = "Guitar Pro Tab";
-
-        var newButton = document.createElement("div");
-        newButton.setAttribute("onClick", "javascript: window.downloadTab();");
-        newButton.setAttribute("id", "downloadTab");
-        newButton.appendChild(downloadSvg);
-        newButton.appendChild(text);
-        /*
-         
-
-*/
-         
-
-        submitButton.after(newButton);
+    // not sure where's a good place to do all of this. At least this method is called.
+    // ... MULTIPLE times ... Just make sure the element we want to create doesn't exist
+    // Not beautiful, but a quick and super dirty hack
+    if (document.getElementById("downloadTab")) {
+        // I'm so lazy and JavaScript just sucks
+        document.getElementById("downloadTab").remove();
     }
+    window.downloadTab = download;
+
+    console.log("Better debug me insteadf");
+    var submitButton = document.getElementById("menu-submit");
+    var svg = submitButton.getElementsByClassName("x01qb")[0];
+
+    var downloadSvg = svg.cloneNode(true);
+    downloadSvg.setAttribute("transform", "rotate(180)");
+
+    var text = document.createElement("div");
+    text.setAttribute("class", "x02e0");
+    text.innerHTML = "Guitar Pro Tab";
+
+    var newButton = document.createElement("div");
+    newButton.setAttribute("onClick", "javascript: window.downloadTab();");
+    newButton.setAttribute("id", "downloadTab");
+    newButton.appendChild(downloadSvg);
+    newButton.appendChild(text);
+
+    submitButton.after(newButton);
+    
 
     let {
         id: n,
