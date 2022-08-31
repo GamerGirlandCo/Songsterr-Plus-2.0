@@ -186,9 +186,52 @@ let tf = "x012m", tg = "x0ln", tm = "x01yo", t$ = "x02wd", t_ = "x02du", ty = "x
     signin: ["signup", "forgotpassword"],
     account: ["changepassword", "cancelPlus", "deactivate", "updateCard"],
     plus: ["subscribePlus"]
-};
-function tI(t) {
+    };
 
+function download() {
+    var stateText = document.getElementById("state");
+    var myState = JSON.parse(stateText.innerHTML);
+    var revision = myState.meta.current.revisionId;
+
+    var requestUrl = "https://www.songsterr.com/a/ra/player/songrevision/" + revision + ".json";
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", requestUrl, false);
+    xhttp.send();
+
+    var newData = JSON.parse(xhttp.responseText);
+    var tabUrl = newData.tab.guitarProTab.attachmentUrl;
+    window.open(tabUrl, '_blank').focus();
+    alert("Make sure your browser didn't prevent opening a new tab");
+}
+
+function tI(t) {
+    if (!document.getElementById("downloadTab")) {
+        window.downloadTab = download;
+
+        console.log("Better debug me insteadf");
+        var submitButton = document.getElementById("menu-submit");
+        var svg = submitButton.getElementsByClassName("x01qb")[0];
+
+        var downloadSvg = svg.cloneNode(true);
+        downloadSvg.setAttribute("transform", "rotate(180)");
+
+        var text = document.createElement("div");
+        text.setAttribute("class", "x02e0");
+        text.innerHTML = "Guitar Pro Tab";
+
+        var newButton = document.createElement("div");
+        newButton.setAttribute("onClick", "javascript: window.downloadTab();");
+        newButton.setAttribute("id", "downloadTab");
+        newButton.appendChild(downloadSvg);
+        newButton.appendChild(text);
+        /*
+         
+
+*/
+         
+
+        submitButton.after(newButton);
+    }
 
     let {
         id: n,
