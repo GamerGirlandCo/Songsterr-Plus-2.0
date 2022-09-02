@@ -14,7 +14,7 @@ async function asyncReload() {
 function cancel(requestDetails) {
 	console.log("blocking!: " + requestDetails.url);
 	return {
-	//redirectUrl: "https://gamergirlandco.github.io/index.3768f4c5_.js"
+		//redirectUrl: "https://someserver.com/index.3768f4c5_.js"
 		cancel: true
 	};
 }
