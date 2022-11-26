@@ -1,1 +1,0 @@
-var a="/static/media/appstore.dd39ee94.svg",p="/static/media/gplay.c1996475.svg";export{a as a,p as g}
