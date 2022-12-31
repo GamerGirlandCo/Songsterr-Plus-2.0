@@ -11,7 +11,7 @@ function bab() {
 	// document.body.appendChild("link")
 	
 	console.log("!!!")
-	let styes = `.mim {
+	let styes = `.Cek21w {
 		bottom:30px;
 		left:0;
 		padding:0;
