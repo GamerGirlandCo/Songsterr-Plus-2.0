@@ -20,7 +20,7 @@ function cancel(requestDetails) {
 }
 browser.webRequest.onBeforeRequest.addListener(
 	cancel,
-	{urls:["https://www.songsterr.com/static/*index.*.js"]},
+	{urls:["https://www.songsterr.com/static/*index.*.js", "https://www.songsterr.com/static/latest/AppFooter.*.css"]},
 	["blocking"]
 );
 

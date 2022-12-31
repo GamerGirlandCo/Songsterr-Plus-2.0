@@ -29,7 +29,7 @@ function bab() {
 	styleSheet.innerText = styes
 	window.addEventListener('DOMContentLoaded', (event) => {
     setTimeout(() => {
-			document.body.appendChild(styleSheet)
+			document.head.appendChild(styleSheet)
 		})
 	}, 5000);
 	
