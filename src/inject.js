@@ -27,9 +27,9 @@ function bab() {
 	`
 	var styleSheet = document.createElement("style")
 	styleSheet.innerText = styes
-	document.body.appendChild(styleSheet)
 	window.addEventListener('DOMContentLoaded', (event) => {
     setTimeout(() => {
+			document.body.appendChild(styleSheet)
 		})
 	}, 5000);
 	
