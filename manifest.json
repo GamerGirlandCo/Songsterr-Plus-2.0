@@ -34,7 +34,7 @@
 		"<all_urls>",
 		"idle"
 	],
-	"browser-specific-settings": {
+	"browser_specific_settings": {
 		"gecko": {
 			"id": "songsterr@tablet.sh",
 			"strict_min_version": "42.0"
