@@ -15,6 +15,7 @@ function bab() {
 		bottom:30px;
 		left:0;
 		padding:0;
+		height: unset !important;
 		pointer-events:none;
 		position:unset !important;
 		right:0;
