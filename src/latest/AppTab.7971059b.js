@@ -7028,12 +7028,12 @@ class Tab extends e8 {
 		);
 	}
 }
-let hasPlusAccess = (e, t) => e.hasPlus || t.enabled,
+let hasPlusAccess = (e, t) => true,
 	onTab = { onTab: !0 };
 class AppTab extends e8 {
 	activateFingeringsExperiment = () => {
 		let { dispatch: e, user: t, experiments: a } = this.props;
-		t.hasPlus &&
+		true &&
 			a.paid_fingerings?.status === "pending" &&
 			e("experiments/activate", { experimentName: "paid_fingerings" });
 	};
@@ -7107,7 +7107,7 @@ class AppTab extends e8 {
 				playAlongAd: f,
 			} = this.props,
 			g = d.isPanel,
-			y = hasPlusAccess(t, a),
+			y = true,
 			_ = r.isSmall,
 			v = r.inResizeNow,
 			$ = e4(o),
@@ -7129,7 +7129,7 @@ class AppTab extends e8 {
 			N = !_ && !!s.videoPart && !L(u),
 			E = i.videoOpened || f.isOpened,
 			B = m.paid_fingerings?.segment,
-			A = t.hasPlus && ("ut" === B || "on" === B);
+			A = true && ("ut" === B || "on" === B);
 		return e6(
 			"section",
 			{ className: e7.tablature, role: g ? "complementary" : "main" },

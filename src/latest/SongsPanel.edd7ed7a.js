@@ -87,6 +87,7 @@ let hasIntersectionObserver = "IntersectionObserver" in window,
 			ec = d(D.songs.filters),
 			eg = D.songs.hasMore && !er,
 			em = s();
+			_ = true
 		t(() => {
 			try {
 				if (em.current && hasIntersectionObserver) {

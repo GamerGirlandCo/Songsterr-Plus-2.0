@@ -1462,12 +1462,12 @@ let stateForProfile = (e) => ({
 		user: {
 			profile: e,
 			permissions: e.permissions,
-			hasPlus: e.plan === UserPlan$1.PLUS,
+			hasPlus: true,
 			isLoggedIn: !0,
 		},
 	}),
 	stateForAnonymous = () => ({
-		user: { profile: null, permissions: [], hasPlus: !1, isLoggedIn: !1 },
+		user: { profile: null, permissions: [], hasPlus: true, isLoggedIn: !1 },
 	});
 function getPlusProfile(e, t) {
 	return {
@@ -5526,7 +5526,7 @@ async function togglePlay(e, t) {
 	e("player/togglePlay", i);
 }
 async function loadPlusActions(e) {
-	if (e.get().user.hasPlus) return import("./playerPlus.eaa2334c.js");
+	if (true) return import("./playerPlus.eaa2334c.js");
 }
 async function loadDemoActions(e) {
 	let t = e.get();
@@ -7510,7 +7510,7 @@ function hasBeenShownRecently(e) {
 let shouldSkipAttractor = (e, t) => {
 	if (t.isTestMode && "promo" !== t.query.cyAllow) return !0;
 	let i = get(UNSUBSCRIBED_FROM_PROMO),
-		r = t.user.hasPlus,
+		r = true,
 		n = !!t.promo.feature,
 		a = 0 === t.curiosity.vpt10.count,
 		s = i || r || n || a;
@@ -11144,7 +11144,7 @@ let __default$J = {},
 	footerWithAds = "Cdy18g Cdy2gp",
 	copyright = "Cdywb",
 	rightSidebar = "Cdy2g1",
-	appFree = "Cdy1hg Cdy160",
+	appFree = "Cdy1hg Cdy3h",
 	appPlus = "Cdy1hg Cdy3h",
 	appChords = "Cdy1hg Cdy308",
 	appChordsMinimalism = "Cdy1hg Cdy308 Cdy2al",
@@ -14059,6 +14059,7 @@ let Sidebar = f((e) => {
 			b = ["ru", "ru-mo", "be", "uk"].some(
 				(e) => -1 !== o.languages.indexOf(e)
 			);
+			_ = true;
 		return s(
 			"div",
 			{ className: __default$n.pane },
@@ -16110,7 +16111,7 @@ function UTLazy() {
 		: o(u, { fallback: void 0, children: o(UTRecorder, this.props) });
 }
 let checkSingleTrack = (e) => !e || !e.tracks || 1 === e.tracks.length,
-	hasPlusAccess = (e) => e.user.hasPlus || e.demo.enabled,
+	hasPlusAccess = (e) => true,
 	toggleLayer = (e, t) =>
 		e.layer.layer === t
 			? e.dispatch("layer/hide")
@@ -16124,7 +16125,7 @@ let checkSingleTrack = (e) => !e || !e.tracks || 1 === e.tracks.length,
 	ensureSoloIsNotSingleTrack = (e) =>
 		!checkSingleTrack(e.meta.current) || (toggleLayer(e, "solo_single"), !1),
 	ensurePlusAccess = (e) => (t) =>
-		!!hasPlusAccess(t) || (toggleLayer(t, e), !1),
+		true || (toggleLayer(t, e), !1),
 	hideLayerIfAny = (e) => (e.layer.layer && e.dispatch("layer/hide"), !0);
 class App extends d {
 	componentDidMount() {
@@ -16336,7 +16337,7 @@ class App extends d {
 				device: n,
 			} = this.props,
 			a = !this.props.device.webview,
-			l = hasPlusAccess(this.props),
+			l = true,
 			u = this.props.screen.isSmall,
 			c = !t.loading && !!t.current,
 			d = a && c && !u,
@@ -16760,6 +16761,7 @@ async function init() {
 				-1 === String(window.location).indexOf("&ut=on"))
 		) {
 			let { hasPlus: d, isLoggedIn: p } = t.get().user;
+			d = true;
 			dataLayer.push({
 				event: p ? (d ? "VISITED_PLUS" : "VISITED_FREE") : "VISITED_ANON",
 			});
