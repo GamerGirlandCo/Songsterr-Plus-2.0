@@ -82,8 +82,8 @@ let hasIntersectionObserver = "IntersectionObserver" in window,
 			D = s();
 		F(z, D, "ArtistPanel");
 		let { isDesktop: E } = P,
-			// { hasPlus: H } = N,
-			H = true,
+			{ hasPlus: H } = N,
+			// H = true,
 			U = +L.artistId,
 			V = B.artists[U] || "Unknown Artist",
 			Z = c(B.filters, ""),
@@ -135,6 +135,7 @@ let hasIntersectionObserver = "IntersectionObserver" in window,
 				console.error(t);
 			}
 		}, []);
+		H = true;
 		let tp = {
 				tuningFilter: B.filters.tunings[B.filters.instrument] || h,
 				instrumentFilter: B.filters.instrument,

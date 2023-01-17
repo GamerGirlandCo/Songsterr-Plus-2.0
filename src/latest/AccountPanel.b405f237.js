@@ -400,7 +400,7 @@ class AccountPanel extends n {
 	render() {
 		let { gettext: e } = g(locales);
 		y();
-		let {/*  hasPlus: t, */ isLoggedIn: n, profile: i } = this.props.user,
+		let { hasPlus: t, isLoggedIn: n, profile: i } = this.props.user;
 			t = true;
 		if (!n)
 			return a(
