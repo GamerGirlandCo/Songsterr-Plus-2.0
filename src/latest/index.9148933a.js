@@ -244,7 +244,7 @@ function isEmpty(e) {
 function getServerRedirectLocation(e, t, i) {
 	if (i.user.isLoggedIn) {
 		if ("/a/wa/signin" === e || "/a/wa/signup" === e) return "/a/wa/account";
-		if (i.user.hasPlus) {
+		if (true) {
 			if ("/a/wa/account/deactivate" === e || e.startsWith("/a/wa/plus"))
 				return "/a/wa/account";
 		} else if ("/a/wa/account/card" === e || "/a/wa/account/subscription" === e)
@@ -1237,12 +1237,12 @@ let stateForProfile = (e) => ({
 		user: {
 			profile: e,
 			permissions: e.permissions,
-			hasPlus: e.plan === A.PLUS,
+			hasPlus: true,
 			isLoggedIn: !0,
 		},
 	}),
 	stateForAnonymous = () => ({
-		user: { profile: null, permissions: [], hasPlus: !1, isLoggedIn: !1 },
+		user: { profile: null, permissions: [], hasPlus: true, isLoggedIn: !1 },
 	});
 function getPlusProfile(e, t) {
 	return { ...e.user.profile, subscription: t.subscription, plan: A.PLUS };
@@ -5069,7 +5069,7 @@ async function togglePlay(e, t) {
 	e("player/togglePlay", i);
 }
 async function loadPlusActions(e) {
-	if (e.get().user.hasPlus) return import("./playerPlus.c65da570.js");
+	if (true) return import("./playerPlus.c65da570.js");
 }
 async function loadDemoActions(e) {
 	let t = e.get();
@@ -5135,7 +5135,7 @@ function saveToLS(e, t) {
 }
 function loadFromLS(e, t, i, n, r) {
 	let a = R(`player-${e}`),
-		s = i.hasPlus,
+		s = true,
 		o = {
 			cursor: { position: { cursor: 0, loopEnd: 0, loopStart: 0 } },
 			player: {
@@ -7164,7 +7164,7 @@ function hasBeenShownRecently(e) {
 let shouldSkipAttractor = (e, t) => {
 	if (t.isTestMode && "promo" !== t.query.cyAllow) return !0;
 	let i = R(UNSUBSCRIBED_FROM_PROMO),
-		n = t.user.hasPlus,
+		n = true,
 		r = !!t.promo.feature,
 		a = 0 === t.curiosity.vpt10.count,
 		s = i || n || r || a;
@@ -8387,7 +8387,7 @@ let module$c = (e) => {
 			e.on("faq/load:done", (e, t) => {
 				let { experiments: i, user: n } = e;
 				if (
-					n.hasPlus &&
+					true &&
 					(i.paid_fingerings?.segment === "ut" ||
 						i.paid_fingerings?.segment === "on")
 				) {
@@ -14025,10 +14025,12 @@ let pages = {
 		),
 			r(() => toggleRecaptchaBadge(m, y), [m, y]);
 		let { isDesktop: S } = o,
-			{ hasPlus: _, isLoggedIn: v, profile: E } = u,
+			{ /* hasPlus: _, */ isLoggedIn: v, profile: E } = u,
+			_ = true,
 			b = ["ru", "ru-mo", "be", "uk"].some(
 				(e) => -1 !== o.languages.indexOf(e)
 			);
+			_ = true;
 		return s(
 			"div",
 			{ className: __default$n.pane },
@@ -16116,7 +16118,7 @@ function UTLazy() {
 		: o(u, { fallback: void 0, children: o(UTRecorder, this.props) });
 }
 let checkSingleTrack = (e) => !e || !e.tracks || 1 === e.tracks.length,
-	hasPlusAccess = (e) => e.user.hasPlus || e.demo.enabled,
+	hasPlusAccess = (e) => true || e.demo.enabled,
 	toggleLayer = (e, t) =>
 		e.layer.layer === t
 			? e.dispatch("layer/hide")
@@ -16771,6 +16773,7 @@ async function init() {
 				-1 === String(window.location).indexOf("&ut=on"))
 		) {
 			let { hasPlus: e, isLoggedIn: i } = t.get().user;
+			e = true;
 			dataLayer.push({
 				event: i ? (e ? "VISITED_PLUS" : "VISITED_FREE") : "VISITED_ANON",
 			});
@@ -16801,7 +16804,7 @@ async function init() {
 		if (t.get().device.isDesktop) {
 			let e = async () => {
 					let e = t.get();
-					(e.user.hasPlus || e.demo.enabled) &&
+					(true|| e.demo.enabled) &&
 						(await t.dispatch("print/enable"));
 				},
 				i = async () => {
