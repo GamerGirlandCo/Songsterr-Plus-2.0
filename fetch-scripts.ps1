@@ -1,4 +1,4 @@
-$importReg = "(await )?import\(['`"]\./(?<file>.*)['`"]\)|import(?: )?['`"]\./(?<file>.*?)['`"];|import(?: )?\{.*\}(?: )?from(?: )?['`"]\./(?<file>.*)['`"]"
+$importReg = "(await )?import\(['`"]\./(?<file>.*?)['`"]\)|import(?: )?['`"]\./(?<file>.*?)['`"];|import(?: )?\{.*\}(?: )?from(?: )?['`"]\./(?<file>.*?)['`"];"
 Get-Content ./src/latest/index.*.js | ForEach-Object {
 	if($_ -match $importReg) {
 		# Write-Output $_
