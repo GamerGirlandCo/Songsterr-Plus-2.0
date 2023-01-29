@@ -13726,7 +13726,8 @@ function getSuffix(e) {
 function AppHeader(e) {
 	let t,
 		i,
-		{ plusAccess: r, handleNotation: n, showFullUI: a = !0 } = e,
+		{ /* plusAccess: r, */ handleNotation: n, showFullUI: a = !0 } = e,
+		r = true,
 		{
 			dispatch: s,
 			route: l,

@@ -1399,7 +1399,7 @@ class Controls extends e3 {
 		let { gettext: e } = k(locales),
 			{
 				device: t,
-				plusAccess: i,
+				// plusAccess: i,
 				layer: a,
 				tadEditorWarning: o,
 				speed: n,
@@ -1410,6 +1410,7 @@ class Controls extends e3 {
 				videoIsOpened: d,
 				metronomeType: h,
 			} = this.props,
+			i = true,
 			{ print: c, experiments: f } = m("print", "experiments"),
 			g = p(t.os) || P(t.os) || M(t),
 			y = "mixer" === a,
