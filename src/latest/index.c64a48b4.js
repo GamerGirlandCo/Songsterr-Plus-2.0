@@ -16736,7 +16736,7 @@ let checkSingleTrack = (e) => !e || !e.tracks || 1 === e.tracks.length,
 	ensureSoloIsNotSingleTrack = (e) =>
 		!checkSingleTrack(e.meta.current) || (toggleLayer(e, "solo_single"), !1),
 	ensurePlusAccess = (e) => (t) =>
-		!!hasPlusAccess(t) || (toggleLayer(t, e), !1),
+		true,
 	hideLayerIfAny = (e) => (e.layer.layer && e.dispatch("layer/hide"), !0);
 class App extends c {
 	componentDidMount() {
