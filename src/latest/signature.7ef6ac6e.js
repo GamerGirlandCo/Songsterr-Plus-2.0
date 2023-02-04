@@ -1,1 +1,2 @@
-var signature="/static/media/signature.d3aca345.svg";export{signature as s};
+var a = "/static/media/signature.d3aca345.svg";
+export { a as s };

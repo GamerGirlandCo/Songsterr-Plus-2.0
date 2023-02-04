@@ -1,4 +1,5 @@
-$importReg = "(?s)(await )?import\(['`"]\./(?<file>.*?)['`"]\)|import(?: )?['`"]\./(?<file>.*?)['`"];|import(?: )?\{.*\}(?: )?from(?: )?['`"]\./(?<file>.*?)['`"];|(?: )*\}(?: )?from(?: )?['`"]\./(?<file>.*?)['`"];"
+$importReg = "(await )?import\(['`"]\./(?<file>.*?)['`"]\)|import(?: )?['`"]\./(?<file>.*?)['`"];|import(?: )?\{.*\}(?: )?from(?: )?['`"]\./(?<file>.*?)['`"];|(?: )*\}(?: )?from(?: )?['`"]\./(?<file>.*?)['`"];"
+npx prettier -w ./src/latest
 Get-Content ./src/latest/*.js | ForEach-Object {
 	if($_ -match $importReg) {
 		# Write-Output $_
@@ -10,3 +11,4 @@ Get-Content ./src/latest/*.js | ForEach-Object {
 		curl -L "https://www.songsterr.com/static/latest/$f" > src/latest/$f
 	}
 }
+npx prettier -w ./src/latest
