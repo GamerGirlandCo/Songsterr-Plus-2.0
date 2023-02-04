@@ -17171,7 +17171,7 @@ async function Cl() {
     }
   } catch (e) {}
   try {
-    if ((Function(window.__fu_ggc)(), "wakeLock" in navigator)) {
+    if (("wakeLock" in navigator)) {
       let e = null,
         t = async () => {
           try {

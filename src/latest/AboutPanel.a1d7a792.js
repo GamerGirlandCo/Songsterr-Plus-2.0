@@ -156,4 +156,4 @@ function P(r) {
     )
   );
 }
-export { P as default };
+export { P };
