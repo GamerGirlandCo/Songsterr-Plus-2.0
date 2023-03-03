@@ -1,0 +1,26 @@
+import { f as f, b as u } from "./Input.9e959f35.js";
+let C = "Cufny",
+  r = "Cuf1ge",
+  e = "Cuf6b",
+  t = "Cuf2r8",
+  a = "Cuf1e6",
+  n = "Cuf2r8 Cuf1rp",
+  o = f + " Cuf13f",
+  i = u + " Cufp",
+  p = "Cuf8p",
+  s = "Cufam",
+  m = "Cuf15w",
+  c = {
+    form: "Cufny",
+    motto: "Cuf1ge",
+    actions: "Cuf6b",
+    notice: "Cuf2r8",
+    finishInstructions: "Cuf1e6",
+    noticeWarning: "Cuf2r8 Cuf1rp",
+    field: f + " Cuf13f",
+    fieldError: u + " Cufp",
+    textarea: "Cuf8p",
+    errorWrapper: "Cufam",
+    fileInput: "Cuf15w",
+  };
+export { c as _, e as a, p as t };
