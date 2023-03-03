@@ -3,7 +3,7 @@ function bab() {
 	let s = document.createElement("script");
 	s.setAttribute("async", "");
 	s.setAttribute("type", "module");
-	s.setAttribute("src", browser.extension.getURL("latest/index.659fabbf.js"));
+	s.setAttribute("src", browser.extension.getURL("latest/index.6eeae9f8.js"));
 	s.setAttribute("crossorigin", "anonymous")
 	document.body.appendChild(s)
 	let app = document.getElementById("app");
