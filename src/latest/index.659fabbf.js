@@ -13132,10 +13132,10 @@ let yq = "Bo82u2",
       import("./RevisionsPopupContent.3097fda3.js"),
       yW([
         "/static/latest/RevisionsPopupContent.96c60a8835717ce5.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/UploadInstructions.33b24b6372106d73.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
-        "/static/latest/UploadRevisionForm.module.75d72c0838d39945.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
+        "/static/latest/UploadRevisionForm.module.b85096c82cbce142.css",
       ]),
     ]).then((e) => e[0])
   ),
@@ -13767,10 +13767,10 @@ let vR = E(() =>
       import("./AppChords.9c412ecb.js"),
       yW([
         "/static/latest/AppChords.8c5c2858fe5f8fc4.css",
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/AppFooter.d2ef4a102033ad6e.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/AppFooter.be08909eb7292e42.css",
         "/static/latest/SWW.ee0869611439c289.css",
-        "/static/latest/Capo.60a58d9fb20bebec.css",
+        "/static/latest/Capo.dafde59b4d16e326.css",
       ]),
     ]).then((e) => e[0])
   ),
@@ -13779,8 +13779,8 @@ let vR = E(() =>
       import("./AppTags.073e8521.js"),
       yW([
         "/static/latest/AppTags.e210aabd9d1f9d59.css",
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/AppFooter.d2ef4a102033ad6e.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/AppFooter.be08909eb7292e42.css",
         "/static/latest/SWW.ee0869611439c289.css",
       ]),
     ]).then((e) => e[0])
@@ -13789,12 +13789,12 @@ let vR = E(() =>
     Promise.all([
       import("./AppTab.19fc1308.js"),
       yW([
-        "/static/latest/AppTab.b3d7bbbff96dbf46.css",
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/Capo.60a58d9fb20bebec.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
-        "/static/latest/UploadRevisionForm.module.75d72c0838d39945.css",
-        "/static/latest/AppFooter.d2ef4a102033ad6e.css",
+        "/static/latest/AppTab.f23cd2c91c042d6a.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/Capo.dafde59b4d16e326.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
+        "/static/latest/UploadRevisionForm.module.b85096c82cbce142.css",
+        "/static/latest/AppFooter.be08909eb7292e42.css",
         "/static/latest/SWW.ee0869611439c289.css",
       ]),
     ]).then((e) => e[0])
@@ -13803,7 +13803,7 @@ let vR = E(() =>
     Promise.all([
       import("./SongsPanel.a06eb65a.js"),
       yW([
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/useSongListHotkeys.01d9d929d90358c1.css",
         "/static/latest/SearchBox.4bb250a8e8d72c76.css",
         "/static/latest/Stub.840d865f8d59eb70.css",
@@ -13817,7 +13817,7 @@ let vR = E(() =>
       import("./FavoritesPanel.6783da2f.js"),
       yW([
         "/static/latest/FavoritesPanel.fccd96b41e79d31b.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/useSongListHotkeys.01d9d929d90358c1.css",
         "/static/latest/SearchBox.4bb250a8e8d72c76.css",
         "/static/latest/Stub.840d865f8d59eb70.css",
@@ -13831,7 +13831,7 @@ let vR = E(() =>
       import("./ArtistPanel.a5aa77d0.js"),
       yW([
         "/static/latest/ArtistPanel.fd61db0afdcd05e3.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/useSongListHotkeys.01d9d929d90358c1.css",
         "/static/latest/SearchBox.4bb250a8e8d72c76.css",
         "/static/latest/Stub.840d865f8d59eb70.css",
@@ -13845,8 +13845,8 @@ let vR = E(() =>
       yW([
         "/static/latest/SubmitPanel.8a39e7eff3cd94af.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
         "/static/latest/UploadInstructions.33b24b6372106d73.css",
         "/static/latest/Stub.840d865f8d59eb70.css",
       ]),
@@ -13858,7 +13858,7 @@ let vR = E(() =>
       yW([
         "/static/latest/TextPanel.b65687d362098683.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
       ]),
     ]).then((e) => e[0])
   ),
@@ -13867,7 +13867,7 @@ let vR = E(() =>
       import("./AboutPanel.a1d7a792.js"),
       yW([
         "/static/latest/AboutPanel.90a1dc2a1bed94a5.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
       ]),
     ]).then((e) => e[0])
@@ -13877,7 +13877,7 @@ let vR = E(() =>
       import("./JobsPanel.68408005.js"),
       yW([
         "/static/latest/JobsPanel.5f73cabf19d918b7.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
       ]),
     ]).then((e) => e[0])
@@ -13887,12 +13887,12 @@ let vR = E(() =>
       import("./HelpPanel.1271f894.js"),
       yW([
         "/static/latest/HelpPanel.0e111599c5b6d415.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/TocPointer.4277edfc32523766.css",
         "/static/latest/SearchBox.4bb250a8e8d72c76.css",
         "/static/latest/ContinueLink.15b61efe8be39218.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
         "/static/latest/GenericPanel.module.938bfc65af449eaa.css",
         "/static/latest/SWW.ee0869611439c289.css",
       ]),
@@ -13903,8 +13903,8 @@ let vR = E(() =>
       import("./SigninPanel.81a13b02.js"),
       yW([
         "/static/latest/SigninPanel.374924d6629568fa.css",
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
       ]),
     ]).then((e) => e[0])
@@ -13914,8 +13914,8 @@ let vR = E(() =>
       import("./SignupPanel.ca0b7b40.js"),
       yW([
         "/static/latest/SignupPanel.c958ca78cefae30f.css",
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
       ]),
     ]).then((e) => e[0])
@@ -13925,8 +13925,8 @@ let vR = E(() =>
       import("./AccountPanel.fb88e539.js"),
       yW([
         "/static/latest/AccountPanel.a74461eaddfc799e.css",
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
       ]),
     ]).then((e) => e[0])
@@ -13936,7 +13936,7 @@ let vR = E(() =>
       import("./MyTabsPanel.2691619b.js"),
       yW([
         "/static/latest/MyTabsPanel.43322a0d39d03c63.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/Stub.840d865f8d59eb70.css",
       ]),
@@ -13946,8 +13946,8 @@ let vR = E(() =>
     Promise.all([
       import("./ForgotPasswordPanel.0e66a27d.js"),
       yW([
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/ContinueLink.15b61efe8be39218.css",
         "/static/latest/GenericPanel.module.938bfc65af449eaa.css",
@@ -13958,8 +13958,8 @@ let vR = E(() =>
     Promise.all([
       import("./ChangePasswordPanel.263a2050.js"),
       yW([
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/ContinueLink.15b61efe8be39218.css",
         "/static/latest/GenericPanel.module.938bfc65af449eaa.css",
@@ -13971,7 +13971,7 @@ let vR = E(() =>
       import("./PlusPanel.12c60376.js"),
       yW([
         "/static/latest/PlusPanel.cf385811451b187d.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
       ]),
     ]).then((e) => e[0])
@@ -13981,7 +13981,7 @@ let vR = E(() =>
       import("./PaymentPanel.9c66c965.js"),
       yW([
         "/static/latest/PaymentPanel.6d2b3da012ef330b.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/PaymentForm.84991b3ba8107b90.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/ContinueLink.15b61efe8be39218.css",
@@ -13992,8 +13992,8 @@ let vR = E(() =>
     Promise.all([
       import("./CouponPanel.f30dfd2e.js"),
       yW([
-        "/static/latest/index.964b551d17e3a7da.css",
-        "/static/latest/Input.2762c3e20d6520b6.css",
+        "/static/latest/index.546235ebfd21e495.css",
+        "/static/latest/Input.a9724713b13b8c84.css",
         "/static/latest/ContinueLink.15b61efe8be39218.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/GenericPanel.module.938bfc65af449eaa.css",
@@ -14004,7 +14004,7 @@ let vR = E(() =>
     Promise.all([
       import("./CancelPlusPanel.e137cca1.js"),
       yW([
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/ContinueLink.15b61efe8be39218.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/GenericPanel.module.938bfc65af449eaa.css",
@@ -14015,7 +14015,7 @@ let vR = E(() =>
     Promise.all([
       import("./DeactivatePanel.f6b4f287.js"),
       yW([
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/GenericPanel.module.938bfc65af449eaa.css",
         "/static/latest/ContinueLink.15b61efe8be39218.css",
@@ -14027,7 +14027,7 @@ let vR = E(() =>
       import("./UpdateCardPanel.e4dc8c8c.js"),
       yW([
         "/static/latest/UpdateCardPanel.38d040a682d0cdf1.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/PaymentForm.84991b3ba8107b90.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
         "/static/latest/ContinueLink.15b61efe8be39218.css",
@@ -14039,7 +14039,7 @@ let vR = E(() =>
       import("./HowToReadTabPanel.8a7aea8d.js"),
       yW([
         "/static/latest/HowToReadTabPanel.4e5ad16256add301.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
         "/static/latest/TocPointer.4277edfc32523766.css",
         "/static/latest/Panel.c142932aa80c2dcc.css",
       ]),
@@ -15068,7 +15068,7 @@ let Sh = C(() => {
       import("./ConsentManager.1a9d391e.js"),
       yW([
         "/static/latest/ConsentManager.045f97eb897a0500.css",
-        "/static/latest/index.964b551d17e3a7da.css",
+        "/static/latest/index.546235ebfd21e495.css",
       ]),
     ]).then((e) => e[0])
   ),
@@ -16479,8 +16479,8 @@ let kQ = E(() =>
     import("./UTRecorder.94b32497.js"),
     yW([
       "/static/latest/UTRecorder.0420d2af021d9053.css",
-      "/static/latest/index.964b551d17e3a7da.css",
-      "/static/latest/Input.2762c3e20d6520b6.css",
+      "/static/latest/index.546235ebfd21e495.css",
+      "/static/latest/Input.a9724713b13b8c84.css",
     ]),
   ]).then((e) => e[0])
 );
