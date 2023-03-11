@@ -27,6 +27,11 @@
 		"tabs",
 		"<all_urls>",
 		"idle"
-	]
-
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "songsterr@tablet.sh",
+			"strict_min_version": "42.0"
+		}
+	}
 }
