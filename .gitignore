@@ -1,3 +1,5 @@
 web-ext-artifacts/
 .history/
 tmp/
+node_modules/
+build/*.js

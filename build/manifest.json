@@ -15,14 +15,8 @@
 		"default_title": "Hack Premium ;)",
 		"show_matches": ["https://www.songsterr.com/*"]
 	},
-	"content_scripts": [
-		{
-			"matches": ["https://www.songsterr.com/*"],
-			"js": ["inject.js"]
-		}
-	],
 	"background": {
-		"scripts": ["block.js"]
+		"scripts": ["blocknreplace.js"]
 	},
 	"permissions": [
 		"*://www.songsterr.com/*",
