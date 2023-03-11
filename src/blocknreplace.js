@@ -62,3 +62,15 @@ browser.webRequest.onBeforeRequest.addListener(
 		},
 		['blocking']
 	)
+function cancel(requestDetails) {
+	console.log("blocking!: " + requestDetails.url);
+	return {
+		//redirectUrl: "https://someserver.com/index.3768f4c5_.js"
+		cancel: true
+	};
+}
+browser.webRequest.onBeforeRequest.addListener(
+	cancel,
+	{urls:["https://www.songsterr.com/static/latest/AppFooter*.css"]},
+	["blocking"]
+);
