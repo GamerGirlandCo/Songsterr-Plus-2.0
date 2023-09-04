@@ -138,6 +138,7 @@ if (!browser.webRequest.filterResponseData) {
 		const debuggee = { tabId: tab.id };
 		// The extension calls chrome.debugger.attach() on a tab
 		// to capture network events when you click the extension's action button.
+		chrome.debugger.detach(debuggee)
 		chrome.debugger.attach(debuggee, "1.0", () => {
 			chrome.debugger.sendCommand(debuggee, "Fetch.enable", {
 				patterns: [
