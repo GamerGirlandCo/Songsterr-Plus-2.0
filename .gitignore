@@ -6,3 +6,4 @@ build/*.js
 build/chrome/*.js
 *.pem
 srv/
+*.crx
