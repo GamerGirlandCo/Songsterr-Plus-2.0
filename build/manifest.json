@@ -1,37 +1,44 @@
 {
 
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "Songsterr Plus Hack 2.0",
 	"version": "2.0",
 	"icons": {
 		"48": "someicon.png"
 	},
 	"description": "unlocks songsterr premium cuz fuck them :D",
-	"page_action": {
+	"action": {
 		"default_icon": {
 			"16": "someicon.png",
 			"32": "someicon.png"
 		},
-		"default_title": "Hack Premium ;)",
-		"show_matches": ["https://www.songsterr.com/*"]
+		"default_title": "Hack Premium ;)"
 	},
 	"background": {
-		"scripts": ["blocknreplace.js"]
+		"service_worker": "blocknreplace.js"
 	},
 	"permissions": [
-		"*://www.songsterr.com/*",
-		"*://gamergirlandco.github.io/*",
 		"webRequest",
-		"webRequestBlocking",
 		"activeTab",
 		"tabs",
-		"<all_urls>",
-		"idle"
+		"scripting",
+		"debugger",
+		"idle",
+		"declarativeNetRequest"
 	],
 	"browser_specific_settings": {
 		"gecko": {
 			"id": "songsterr@tablet.sh",
 			"strict_min_version": "42.0"
 		}
-	}
+	},
+	"declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rule.json"
+      }
+    ]
+  }
 }

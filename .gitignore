@@ -4,3 +4,4 @@ tmp/
 node_modules/
 build/*.js
 *.pem
+srv/
