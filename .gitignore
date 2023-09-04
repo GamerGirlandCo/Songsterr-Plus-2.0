@@ -3,5 +3,6 @@ web-ext-artifacts/
 tmp/
 node_modules/
 build/*.js
+build/chrome/*.js
 *.pem
 srv/

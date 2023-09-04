@@ -179,19 +179,19 @@ if (!browser.webRequest.filterResponseData) {
 		},
 		["blocking"]
 	);
+function cancel(requestDetails) {
+	console.log("blocking!: " + requestDetails.url);
+	return {
+		//redirectUrl: "https://someserver.com/index.3768f4c5_.js"
+		cancel: true,
+	};
 }
-// function cancel(requestDetails) {
-// 	console.log("blocking!: " + requestDetails.url);
-// 	return {
-// 		//redirectUrl: "https://someserver.com/index.3768f4c5_.js"
-// 		cancel: true,
-// 	};
-// }
-// browser.webRequest.onBeforeRequest.addListener(
-// 	cancel,
-// 	{ urls: ["https://www.songsterr.com/static/latest/AppFooter*.css"] },
-// 	["blocking"]
-// );
+browser.webRequest.onBeforeRequest.addListener(
+	cancel,
+	{ urls: ["https://www.songsterr.com/static/latest/AppFooter*.css"] },
+	["blocking"]
+);
+}
 
 function b64DecodeUnicode(str) {
 	// Going backwards: from bytestream, to percent-encoding, to original string.
