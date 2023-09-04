@@ -27,14 +27,23 @@ browser.webRequest.onBeforeRequest.addListener(
 							let body0 = node.body.body[0]
 							if(body0) {
 								if(body0.type === "IfStatement") {
-									console.log("cnode", node)
-									console.log("b0", body0)
-										if(body0.test.callee) {
-											identifier = body0.test.callee.name
+									let conseq = body0.consequent;
+									if (conseq.argument) {
+										console.log("conseq", conseq)
+										if (
+											conseq.argument.type == "ImportExpression" &&
+											!!conseq.argument.source.value.match(/.*playerplus.*/i)
+										) {
+											if(body0.test.callee) {
+												identifier = body0.test.callee.name
+											}
 										}
 									}
+									console.log("cnode", node)
+									console.log("b0", body0)
 								}
 							}
+						}
 					}
 				})
 				console.log("iden", identifier)
