@@ -3,3 +3,4 @@ web-ext-artifacts/
 tmp/
 node_modules/
 build/*.js
+*.pem
