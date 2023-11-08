@@ -73,10 +73,8 @@ if (!browser.webRequest.filterResponseData) {
 		if (source.tabId === debuggee.tabId) {
 			if (method === "Fetch.requestPaused") {
 				let request_url = new URL(params.request.url, location);
-				let target_url = new URL(tab.url, location);
 				// we determine that this is the request we need, you can do this through the pattern
 				if (
-					request_url.host === target_url.host &&
 					request_url.pathname &&
 					/https?:\/\/static\.songsterr.com\/production-main\/static\/latest\/index..+\.js/.test(
 						request_url.href
@@ -139,20 +137,22 @@ if (!browser.webRequest.filterResponseData) {
 		// The extension calls chrome.debugger.attach() on a tab
 		// to capture network events when you click the extension's action button.
 		chrome.debugger.detach(debuggee, () => {
-			chrome.debugger.attach(debuggee, "1.0", () => {
-				debuggee.reload()
-				chrome.debugger.sendCommand(debuggee, "Fetch.enable", {
-					patterns: [
-						{
-							urlPattern: "*",
-							requestStage: "Response",
-						},
-					],
+			chrome.tabs.reload(debuggee.tabId, {bypassCache: true}, () => {
+				chrome.debugger.attach(debuggee, "1.0", () => {
+					chrome.debugger.sendCommand(debuggee, "Fetch.enable", {
+						patterns: [
+							{
+								urlPattern: "*",
+								requestStage: "Response",
+							},
+						],
+					});
 				});
+				chrome.debugger.onEvent.addListener((source, method, params) =>
+					processEvent(debuggee, tab, source, method, params)
+				);
 			});
-			chrome.debugger.onEvent.addListener((source, method, params) =>
-				processEvent(debuggee, tab, source, method, params)
-			);
+
 		});
 	}
 
