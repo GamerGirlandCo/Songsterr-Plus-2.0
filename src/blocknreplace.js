@@ -78,7 +78,7 @@ if (!browser.webRequest.filterResponseData) {
 				if (
 					request_url.host === target_url.host &&
 					request_url.pathname &&
-					/https?:\/\/https:\/\/static\.songsterr.com\/production-main\/static\/latest\/index-.+\.js/.test(
+					/https?:\/\/static\.songsterr.com\/production-main\/static\/latest\/index..+\.js/.test(
 						request_url.href
 					)
 				) {
