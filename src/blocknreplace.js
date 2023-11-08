@@ -78,7 +78,7 @@ if (!browser.webRequest.filterResponseData) {
 				if (
 					request_url.host === target_url.host &&
 					request_url.pathname &&
-					/https?:\/\/www.songsterr.com\/static\/latest\/index\..+\.js/.test(
+					/https?:\/\/https:\/\/static\.songsterr.com\/production-main\/static\/latest\/index-.+\.js/.test(
 						request_url.href
 					)
 				) {
@@ -175,7 +175,7 @@ if (!browser.webRequest.filterResponseData) {
 			return {};
 		},
 		{
-			urls: ["https://www.songsterr.com/static/latest/index.*.js"],
+			urls: ["https://static.songsterr.com/production-main/static/latest/index.*.js"],
 		},
 		["blocking"]
 	);
