@@ -7,3 +7,4 @@ build/chrome/*.js
 *.pem
 srv/
 *.crx
+*unpacked.zip
