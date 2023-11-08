@@ -114,7 +114,7 @@ if (!browser.webRequest.filterResponseData) {
 						"Fetch.fulfillRequest",
 						continueParams
 					);
-				} else if(/AppFooter.*\.css/i.test(request_url)) {
+				} else if (/AppFooter.*\.css/i.test(request_url)) {
 					continueParams.responseCode = params.responseStatusCode;
 					continueParams.responseHeaders = params.responseHeaders;
 					continueParams.body = "";
@@ -138,21 +138,24 @@ if (!browser.webRequest.filterResponseData) {
 		const debuggee = { tabId: tab.id };
 		// The extension calls chrome.debugger.attach() on a tab
 		// to capture network events when you click the extension's action button.
-		chrome.debugger.detach(debuggee)
-		chrome.debugger.attach(debuggee, "1.0", () => {
-			chrome.debugger.sendCommand(debuggee, "Fetch.enable", {
-				patterns: [
-					{
-						urlPattern: "*",
-						requestStage: "Response",
-					},
-				],
+		chrome.debugger.detach(debuggee, () => {
+			chrome.debugger.attach(debuggee, "1.0", () => {
+				debuggee.reload()
+				chrome.debugger.sendCommand(debuggee, "Fetch.enable", {
+					patterns: [
+						{
+							urlPattern: "*",
+							requestStage: "Response",
+						},
+					],
+				});
 			});
+			chrome.debugger.onEvent.addListener((source, method, params) =>
+				processEvent(debuggee, tab, source, method, params)
+			);
 		});
-		chrome.debugger.onEvent.addListener((source, method, params) =>
-			processEvent(debuggee, tab, source, method, params)
-		);
 	}
+
 	chrome.action.onClicked.addListener(function (tab) {
 		setupDebugger(tab);
 	});
@@ -175,22 +178,28 @@ if (!browser.webRequest.filterResponseData) {
 			return {};
 		},
 		{
-			urls: ["https://static.songsterr.com/production-main/static/latest/index-*.js"],
+			urls: [
+				"https://static.songsterr.com/production-main/static/latest/index-*.js",
+			],
 		},
 		["blocking"]
 	);
-function cancel(requestDetails) {
-	console.log("blocking!: " + requestDetails.url);
-	return {
-		//redirectUrl: "https://someserver.com/index.3768f4c5_.js"
-		cancel: true,
-	};
-}
-browser.webRequest.onBeforeRequest.addListener(
-	cancel,
-	{ urls: ["https://static.songsterr.com/production-main/static/latest/AppFooter*.css"] },
-	["blocking"]
-);
+	function cancel(requestDetails) {
+		console.log("blocking!: " + requestDetails.url);
+		return {
+			//redirectUrl: "https://someserver.com/index.3768f4c5_.js"
+			cancel: true,
+		};
+	}
+	browser.webRequest.onBeforeRequest.addListener(
+		cancel,
+		{
+			urls: [
+				"https://static.songsterr.com/production-main/static/latest/AppFooter*.css",
+			],
+		},
+		["blocking"]
+	);
 }
 
 function b64DecodeUnicode(str) {
