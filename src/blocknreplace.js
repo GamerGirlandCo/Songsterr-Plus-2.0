@@ -175,7 +175,7 @@ if (!browser.webRequest.filterResponseData) {
 			return {};
 		},
 		{
-			urls: ["https://static.songsterr.com/production-main/static/latest/index.*.js"],
+			urls: ["https://static.songsterr.com/production-main/static/latest/index-*.js"],
 		},
 		["blocking"]
 	);
@@ -188,7 +188,7 @@ function cancel(requestDetails) {
 }
 browser.webRequest.onBeforeRequest.addListener(
 	cancel,
-	{ urls: ["https://www.songsterr.com/static/latest/AppFooter*.css"] },
+	{ urls: ["https://static.songsterr.com/production-main/static/latest/AppFooter*.css"] },
 	["blocking"]
 );
 }

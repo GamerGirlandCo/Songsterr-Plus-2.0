@@ -26,6 +26,7 @@
 	},
 	"permissions": [
 		"*://www.songsterr.com/*",
+		"*://static.songsterr.com/*",
 		"*://gamergirlandco.github.io/*",
 		"webRequest",
 		"webRequestBlocking",
