@@ -9,10 +9,10 @@ const browser = require("webextension-polyfill");
 const beautify = require("js-beautify").js;
 
 function parSnip(source) {
-	source = beautify(source, {
-		indent_size: 2,
-		space_in_empty_paren: true,
-	});
+	// source = beautify(source, {
+	// 	indent_size: 2,
+	// 	space_in_empty_paren: true,
+	// });
 	let asArray = source.split("\n");
 	let joined = asArray.join("\n");
 	const tree = parse(joined, {
