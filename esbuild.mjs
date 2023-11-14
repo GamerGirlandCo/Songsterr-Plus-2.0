@@ -4,9 +4,12 @@ await esbuild.build({
 	entryPoints: ['../src/blocknreplace.js'],
 	bundle: true,
 	sourcemap: false,
+	format: "esm",
 	outfile: '../build/blocknreplace.js',
 	target: ['chrome58', 'firefox57'],
-	external: ["fs"]
+	alias: {
+		// "fs": "browserify-fs"
+	}
 })
 
 

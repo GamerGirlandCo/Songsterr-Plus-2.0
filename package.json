@@ -4,11 +4,13 @@
   "description": ":)",
   "main": "blocknreplace.js",
   "browser": {
-    "path": "path-browserify"
+    "path": "path-browserify",
+    "fs": "browserify-fs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GamerGirlandCo/Songsterr-Plus-2.0.git"
@@ -20,12 +22,15 @@
   },
   "homepage": "https://github.com/GamerGirlandCo/Songsterr-Plus-2.0#readme",
   "dependencies": {
-    "abstract-syntax-tree": "^2.20.6",
-    "js-beautify": "^1.14.7",
+    "abstract-syntax-tree": "^2.21.1",
+    "browserify-fs": "^1.0.0",
+    "js-beautify": "^1.14.11",
     "path-browserify": "^1.0.1",
     "webextension-polyfill": "^0.10.0"
   },
   "devDependencies": {
-    "esbuild": "^0.17.11"
+    "browserify": "^17.0.0",
+    "esbuild": "^0.17.11",
+    "npm-check-updates": "^16.14.6"
   }
 }
